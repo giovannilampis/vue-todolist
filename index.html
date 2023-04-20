@@ -42,7 +42,11 @@
                 </div>
 
                 <p v-if="error" class="bg-white text-center">
-                    You need to enter something with more than 3 letters
+                    You need to digit into the input field something with more than 3 letters
+                </p>
+
+                <p v-if="todos.lenght == 0" class="text-center">
+                    just relax 🫶, you have no commitments to complete
                 </p>
 
             </div>
