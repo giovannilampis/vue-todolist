@@ -51,6 +51,10 @@ createApp ({
                 this.textTask = ''
             }
 
+        },
+
+        deleteTask(){
+            
         }
 
     }
