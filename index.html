@@ -22,7 +22,7 @@
 
             <div class="text-center my-2">
 
-                <input v-model="textTask" type="text" class="mx-3">
+                <input v-model="textTask" type="text" class="mx-3" @KeyUp.enter="addTask">
 
                 <button @click="addTask" class="mx-3">Add Task</button>
 
