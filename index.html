@@ -20,7 +20,7 @@
 
             <h1 class="text-center mt-2 mb-5">VUE JS 3 TODOLIST</h1>
 
-            <div class="my-2 mb-5 row">
+            <div class="my-2 mb-5 row justify-content-center align-items-center">
 
                 <div class="col-6">
                     <input v-model="textTask" type="text" class="mx-3 form-control col-5" @KeyUp.enter="addTask">
@@ -35,15 +35,15 @@
                 <div v-for="(task, index) in todos"
 
                      :key="index"
-                     class="row bg-white">
+                     class="row bg-white justify-content-center align-items-center">
 
-                    <p class="mb-3 col-6" v-if="task.done == false"> {{ task.text }} </p>
-                    <del class="mb-3 col-6" v-if="task.done == true"> {{ task.text }} </del>
+                    <p class="mb-3 col-5" v-if="task.done == false"> {{ task.text }} </p>
+                    <del class="mb-3 col-5" v-if="task.done == true"> {{ task.text }} </del>
 
-                    <button class="btn btn-warning mb-3 col-3" @click="withdrawText(index)">completed / uncompleted task</button>
+                    <button class="btn btn-warning mb-3 col-3" @click="withdrawText(index)">completed / uncompleted</button>
 
                     <div class="col-3">
-                        <a href="#" class="btn btn-primary mb-3 col-3"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></a>
+                        <a href="#" class="btn btn-primary mb-3 col-2"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></a>
                     </div>
 
                 </div>
