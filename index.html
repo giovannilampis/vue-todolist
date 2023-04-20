@@ -28,19 +28,19 @@
 
             </div>
 
-            <div class="bg-secondary">
+            <div class="bg-white">
 
                 <div v-for="(task, index) in todos"
 
                      :key="index"
-                     class="d-flex justify-content-between align-items-center bg-white">
+                     class="d-flex justify-content-end align-items-center bg-white">
 
-                    <p v-if="task.done == false"> {{ task.text }} </p>
-                    <del v-if="task.done == true"> {{ task.text }} </del>
+                    <p class="mx-5 mb-3" v-if="task.done == false"> {{ task.text }} </p>
+                    <del class="mx-5 mb-3" v-if="task.done == true"> {{ task.text }} </del>
 
-                    <button class="btn btn-warning text-center" @click="withdrawText(index)">completed / uncompleted task</button>
+                    <button class="btn btn-warning mx-5 mb-3" @click="withdrawText(index)">completed / uncompleted task</button>
 
-                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></a>
+                    <a href="#" class="btn btn-primary mx-5 mb-3"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></a>
 
                 </div>
 
