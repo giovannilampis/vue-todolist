@@ -35,7 +35,10 @@
                      :key="index"
                      class="d-flex justify-content-between align-items-center bg-white">
 
-                    <p @click="withdrawText(index)"> {{ task.text }} </p>
+                    <p v-if="task.done == false"> {{ task.text }} </p>
+                    <del v-if="task.done == true"> {{ task.text }} </del>
+
+                    <i class="fa-solid fa-check" @click="withdrawText(index)"></i>
 
                     <i class="fa-solid fa-xmark" @click="deleteTask(index)"></i>
 
