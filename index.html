@@ -28,10 +28,6 @@
 
             </div>
 
-            <p v-if="error">
-                You need to enter something with more than 3 letters
-            </p>
-
             <div class="bg-secondary">
 
                 <div v-for="(task, index) in todos"
@@ -44,6 +40,10 @@
                     <i class="fa-solid fa-xmark"></i>
 
                 </div>
+
+                <p v-if="error" class="bg-white text-center">
+                    You need to enter something with more than 3 letters
+                </p>
 
             </div>
 

@@ -39,8 +39,10 @@ createApp ({
             if(this.textTask != ''  && this.textTask.length > 3) {
 
                 this.todos.push( {text: this.textTask} )
+
+                this.error = false
                 
-            } else { error = true }
+            } else { this.error = true }
 
         }
 
