@@ -40,9 +40,16 @@ createApp ({
 
                 this.todos.push( {text: this.textTask} )
 
+                this.textTask = ''
+
                 this.error = false
                 
-            } else { this.error = true }
+            } else { 
+                
+                this.error = true
+            
+                this.textTask = ''
+            }
 
         }
 
