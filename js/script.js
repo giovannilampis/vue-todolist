@@ -8,6 +8,8 @@ createApp ({
 
             textTask: '',
 
+            error: false,
+
             todos: [
                 {
                     text: 'Fare i compiti',
@@ -33,7 +35,13 @@ createApp ({
     methods: {
 
         addTask(){
-            this.todos.push( {text: this.textTask} )
+
+            if(this.textTask != ''  && this.textTask.length > 3) {
+
+                this.todos.push( {text: this.textTask} )
+                
+            } else { error = true }
+
         }
 
     }
