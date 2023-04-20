@@ -27,7 +27,10 @@
 
             <div class="bg-secondary">
 
-                <div class="d-flex justify-content-between align-items-center bg-white">
+                <div v-for="(task, index) in todos"
+                
+                     :key="index"
+                     class="d-flex justify-content-between align-items-center bg-white">
 
                     <p>Koopa troopa bullet bill fire bar Mario Bros</p>
 
