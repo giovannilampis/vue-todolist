@@ -6,6 +6,8 @@ createApp ({
     data() {
         return {
 
+            textTask: '',
+
             todos: [
                 {
                     text: 'Fare i compiti',
@@ -23,6 +25,11 @@ createApp ({
 
         }
     },
+
+    created(){
+
+    },
+
     methods: {
 
     }
