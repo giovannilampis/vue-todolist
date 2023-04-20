@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>vue-todolist</title>
     <!-- FONT AWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP CSS CDN -->
@@ -18,9 +18,9 @@
 
         <div class="container">
 
-            <h1 class="text-center">VUE JS 3 TODOLIST</h1>
+            <h1 class="text-center my-3">VUE JS 3 TODOLIST</h1>
 
-            <div class="text-center">
+            <div class="text-center my-2">
                 <input type="text">
                 <button>Add Task</button>
             </div>
@@ -28,11 +28,11 @@
             <div class="bg-secondary">
 
                 <div v-for="(task, index) in todos"
-                
+
                      :key="index"
                      class="d-flex justify-content-between align-items-center bg-white">
 
-                    <p>Koopa troopa bullet bill fire bar Mario Bros</p>
+                    <p> {{ task.text }} </p>
 
                     <i class="fa-solid fa-xmark"></i>
 
