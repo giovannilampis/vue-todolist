@@ -20,7 +20,7 @@
 
             <h1 class="text-center my-3">VUE JS 3 TODOLIST</h1>
 
-            <div class="text-center my-2">
+            <div class="text-center my-2 mb-5">
 
                 <input v-model="textTask" type="text" class="mx-3" @KeyUp.enter="addTask">
 
@@ -33,7 +33,7 @@
                 <div v-for="(task, index) in todos"
 
                      :key="index"
-                     class="d-flex justify-content-end align-items-center bg-white">
+                     class="d-flex justify-content-center align-items-center bg-white">
 
                     <p class="mx-5 mb-3" v-if="task.done == false"> {{ task.text }} </p>
                     <del class="mx-5 mb-3" v-if="task.done == true"> {{ task.text }} </del>
