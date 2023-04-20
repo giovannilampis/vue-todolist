@@ -24,7 +24,7 @@
 
                 <input v-model="textTask" type="text" class="mx-3" @KeyUp.enter="addTask">
 
-                <button @click="addTask" class="mx-3">Add Task</button>
+                <button @click="addTask" class="mx-3 btn btn-info">Add Task</button>
 
             </div>
 
@@ -38,9 +38,9 @@
                     <p v-if="task.done == false"> {{ task.text }} </p>
                     <del v-if="task.done == true"> {{ task.text }} </del>
 
-                    <i class="fa-solid fa-check" @click="withdrawText(index)"></i>
+                    <button class="btn btn-warning text-center" @click="withdrawText(index)">completed / uncompleted task</button>
 
-                    <i class="fa-solid fa-xmark" @click="deleteTask(index)"></i>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></a>
 
                 </div>
 

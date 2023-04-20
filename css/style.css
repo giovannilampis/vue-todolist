@@ -21,3 +21,8 @@
 img {
     width: 100%;
 }
+
+div.bg-secondary > div {
+    border: 1px solid lightgray;
+    margin-bottom: 1rem;
+}

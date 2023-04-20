@@ -58,7 +58,11 @@ createApp ({
         },
 
         withdrawText(i){
-            this.todos[i].done = true
+
+            if(this.todos[i].done === true){
+                this.todos[i].done = false
+            } else {this.todos[i].done = true}
+            
         }
 
     }
