@@ -32,5 +32,9 @@ createApp ({
 
     methods: {
 
+        addTask(){
+            this.todos.push(this.textTask)
+        }
+
     }
 }).mount("#app")
