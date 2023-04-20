@@ -22,7 +22,7 @@
 
             <div class="my-2 mb-5 row justify-content-center align-items-center">
 
-                <div class="col-6">
+                <div class="col-5">
                     <input v-model="textTask" type="text" class="mx-3 form-control col-5" @KeyUp.enter="addTask">
                 </div>
 
@@ -37,14 +37,21 @@
                      :key="index"
                      class="row bg-white justify-content-center align-items-center">
 
-                    <p class="mb-3 col-5" v-if="task.done == false"> {{ task.text }} </p>
-                    <del class="mb-3 col-5" v-if="task.done == true"> {{ task.text }} </del>
+                    <p class="mb-3 col-6" v-if="task.done == false"> {{ task.text }} </p>
+                    <del class="mb-3 col-lg-6" v-if="task.done == true"> {{ task.text }} </del>
 
-                    <button class="btn btn-warning mb-3 col-3" @click="withdrawText(index)">completed / uncompleted</button>
+                    <div class="col-2">
+                        <button class="btn btn-warning mb-3" @click="withdrawText(index)"><i class="fa-solid fa-check"></i></button>
 
-                    <div class="col-3">
-                        <a href="#" class="btn btn-primary mb-3 col-2"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></a>
                     </div>
+
+                    <div class="col-2">
+                        <button href="#" class="btn btn-primary mb-3"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></button>
+
+                    </div>
+
+
+                    
 
                 </div>
 
