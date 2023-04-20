@@ -53,8 +53,8 @@ createApp ({
 
         },
 
-        deleteTask(){
-            
+        deleteTask(i){
+            this.todos.splice( i, 1 )
         }
 
     }
