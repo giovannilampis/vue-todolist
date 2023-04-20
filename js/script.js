@@ -55,6 +55,10 @@ createApp ({
 
         deleteTask(i){
             this.todos.splice( i, 1 )
+        },
+
+        withdrawText(i){
+            this.todos[i].done = true
         }
 
     }

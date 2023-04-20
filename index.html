@@ -35,7 +35,7 @@
                      :key="index"
                      class="d-flex justify-content-between align-items-center bg-white">
 
-                    <p> {{ task.text }} </p>
+                    <p @click="withdrawText(index)"> {{ task.text }} </p>
 
                     <i class="fa-solid fa-xmark" @click="deleteTask(index)"></i>
 
