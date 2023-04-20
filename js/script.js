@@ -33,7 +33,7 @@ createApp ({
     methods: {
 
         addTask(){
-            this.todos.push(this.textTask)
+            this.todos.push( {text: this.textTask} )
         }
 
     }
