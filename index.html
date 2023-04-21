@@ -42,16 +42,11 @@
 
                     <div class="col-2">
                         <button class="btn btn-warning mb-3" @click="withdrawText(index)"><i class="fa-solid fa-check"></i></button>
-
                     </div>
 
                     <div class="col-2">
                         <button href="#" class="btn btn-primary mb-3"><i class="fa-solid fa-xmark" @click="deleteTask(index)"></i></button>
-
                     </div>
-
-
-                    
 
                 </div>
 
@@ -59,7 +54,7 @@
                     You need to digit into the input field something with more than 3 letters
                 </p>
 
-                <div v-if="todos.lenght == 0" class="text-center">
+                <div v-if="todos.length == 0" class="text-center">
                     <p>just relax 🫶, you have no commitments to complete</p>
                 </div>
 
